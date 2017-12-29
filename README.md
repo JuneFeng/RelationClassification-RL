@@ -5,14 +5,14 @@ Relation classification from noisy data, aiming to categorize semantic relations
 
 DataSets
 =========
-We provide dataset in data folder. The data is download from [[[data]](https://github.com/thunlp/NRE/blob/master/data/data.zip). They preprocess the original data to make it satisfy the input format of the codes. The data is originally released by the paper "Sebastian Riedel, Limin Yao, and Andrew McCallum. Modeling relations and their mentions without labeled text.". [[Download]](http://iesl.cs.umass.edu/riedel/ecml/)
+We provide dataset in data folder. The data is download from [[data]](https://github.com/thunlp/NRE/blob/master/data/data.zip). They preprocess the original data to make it satisfy the input format of the codes. The data is originally released by the paper "Sebastian Riedel, Limin Yao, and Andrew McCallum. Modeling relations and their mentions without labeled text.". [[Download]](http://iesl.cs.umass.edu/riedel/ecml/)
 
 To run out code, the dataset should be put in the data folder. There're two sub-folders pretrain/ and RE/ and a file vec.bin in the data/ folder.
 
 Codes
 =========
 We publish the codes of "Reinforcement Learning for Relation Classification from Noisy Data" here.
-We reffer to the implement code of NRE model published at [[code]](https://github.com/thunlp/NRE).
+We refer to the implement code of NRE model published at [[code]](https://github.com/thunlp/NRE).
 
 Compile
 =========
