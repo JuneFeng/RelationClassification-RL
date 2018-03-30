@@ -25,7 +25,7 @@ For training, you need to type "./main [method] [alpha]" in the corresponding fo
 The output of the model will be saved in folder result/.
 
 Parameter Setting:
-+ method: current training process. "rlpre" measn pretrain the instance selector. "rl" means jointly train the instance selector and relation classifier.
++ method: current training process. "rlpre" means pretrain the instance selector. "rl" means jointly train the instance selector and relation classifier.
 + alpha: learning rate
 
 Test
@@ -35,7 +35,7 @@ For test, you need to type "./main test" in the corresponding folder.
 
 Cite
 =========
-If you use the code, pleasee cite the following paper:
+If you use the code, please cite the following paper:
 [Feng et al. 2016] Jun Feng, Minlie Huang, Li Zhao, Yang Yang, and Xiaoyan Zhu. Reinforcement Learning for Relation Classification from Noisy Data. In AAAI2018. [[pdf]](http://aihuang.org/static/papers/AAAI2018Denoising.pdf)
 
 Reference
