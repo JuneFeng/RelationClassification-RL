@@ -856,8 +856,6 @@ namespace RL {
     
     void CountSentenceVec(string pathS)
     {
-        init();
-        preprocess();
         sentenceVec.clear();
         lossVec.clear();
         for (int i = 0; i < trainLists.size(); i ++)
