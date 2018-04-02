@@ -71,6 +71,7 @@ extern double mx;
 extern int batch;
 extern int npoch;
 extern int len;
+extern int trainPreTimes;
 extern float rate;
 extern FILE *logg;
 extern FILE *prlog;

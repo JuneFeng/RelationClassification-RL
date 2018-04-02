@@ -281,9 +281,12 @@ namespace RLPre {
             sentenceVec.clear();
             lossVec.clear();
             string tmpPath = pathString + "data/pretrain/sentenceVec.txt";
+            printf("%s\n", tmpPath.c_str());
             FILE *fin = fopen(tmpPath.c_str(), "r");
+            printf("%s\n", tmpPath.c_str());
             if (fin == NULL)
             {
+                printf("count\n");
                 RL::CountSentenceVec(pathString);
                 fin = fopen(tmpPath.c_str(), "r");
             }
@@ -329,7 +332,7 @@ namespace RLPre {
 //        test::test(0);
         //        memcpy(updateFeatureW, featureW, featureLen * sizeof(float));
         memcpy(featureWDao, featureW, featureLen * sizeof(float));
-        for (turn = 0; turn < trainTimes; turn ++)
+        for (turn = 0; turn < trainPreTimes; turn ++)
         {
             double rlLoss = 0;
             ok = 0;

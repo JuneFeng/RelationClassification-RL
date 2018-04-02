@@ -18,7 +18,8 @@ string outString = "";
 int output_model = 0;
 
 int num_threads = 10;
-int trainTimes = 25;
+int trainTimes = 15;
+int trainPreTimes = 50;
 int sampleTimes = 3;
 float InitialAlpha = 0.02;
 float reduce = 0.98;

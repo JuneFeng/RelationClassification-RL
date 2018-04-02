@@ -59,10 +59,6 @@ int main(int argc, const char * argv[]) {
         RL::beginTrain();
     if (strcmp(argv[1], "rlpre") == 0)
         RLPre::beginTrain();
-    if (strcmp(argv[1], "countvec") == 0)
-    {
-        RL::CountSentenceVec(pathString);
-    }
     
     return 0;
 }

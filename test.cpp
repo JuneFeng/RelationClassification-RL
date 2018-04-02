@@ -104,7 +104,7 @@ namespace test{
         else
             rr = ll_test[(long long)id+1];
         //    cout<<ll<<' '<<rr<<' '<<((long long)id)<<endl;
-        printf("***%d %d %d\n", ll, rr, (long long)id);
+//        printf("***%d %d %d\n", ll, rr, (long long)id);
         float *r = (float *)calloc(dimensionC, sizeof(float));
         double eps = 0.1;
         int ttt = -1;
@@ -162,7 +162,7 @@ namespace test{
         //    num_threads = 1;
         if (flag == 1)
         {
-            string tmpPath = outString + "_matrixW1+B1.txt" + Int_to_String(nowTurn);
+            string tmpPath = outString + "matrixW1+B1.txt" + Int_to_String(nowTurn);
             FILE *fout = fopen(tmpPath.c_str(), "w");
             //FILE *fout = fopen(("/Users/fengjun/Documents/Research/relation extraction/code/RelationExtraction/out/matrixW1+B1.txt"+version).c_str(), "w");
             fprintf(fout,"%d\t%d\t%d\t%d\n", dimensionC, dimension, window, dimensionWPE);
@@ -177,7 +177,7 @@ namespace test{
             }
             fclose(fout);
             
-            tmpPath = outString + "_matrixRl.txt" + Int_to_String(nowTurn);
+            tmpPath = outString + "matrixRl.txt" + Int_to_String(nowTurn);
             fout = fopen(tmpPath.c_str(), "w");
             //fout = fopen(("/Users/fengjun/Documents/Research/relation extraction/code/RelationExtraction/out/matrixRl.txt"+version).c_str(), "w");
             fprintf(fout,"%d\t%d\n", relationTotal, dimensionC);
@@ -191,7 +191,7 @@ namespace test{
             fprintf(fout, "\n");
             fclose(fout);
             
-            tmpPath = outString + "_matrixPosition.txt" + Int_to_String(nowTurn);
+            tmpPath = outString + "matrixPosition.txt" + Int_to_String(nowTurn);
             fout = fopen(tmpPath.c_str(), "w");
             //fout = fopen(("/Users/fengjun/Documents/Research/relation extraction/code/RelationExtraction/out/matrixPosition.txt"+version).c_str(), "w");
             fprintf(fout,"%d\t%d\t%d\n", PositionTotalE1, PositionTotalE2, dimensionWPE);
@@ -207,7 +207,7 @@ namespace test{
             }
             fclose(fout);
             
-            tmpPath = outString + "_word2vec.txt" + Int_to_String(nowTurn);
+            tmpPath = outString + "word2vec.txt" + Int_to_String(nowTurn);
             fout = fopen(tmpPath.c_str(), "w");
             //fout = fopen(("/Users/fengjun/Documents/Research/relation extraction/code/RelationExtraction/out/word2vec.txt"+version).c_str(), "w");
             fprintf(fout,"%d\t%d\n",wordTotal,dimension);
@@ -252,9 +252,9 @@ namespace test{
                 ll_test[now] = i;
                 now+=1;
             }
-        for (int i = 0; i < num_threads; i ++)
-            printf("ll_size: %d %d\n", i, ll_test[i]);
-        cout<<"tot:\t"<<tot<<endl;
+//        for (int i = 0; i < num_threads; i ++)
+//            printf("ll_size: %d %d\n", i, ll_test[i]);
+//        cout<<"tot:\t"<<tot<<endl;
         pthread_t *pt = (pthread_t *)malloc((num_threads + 1) * sizeof(pthread_t));
         for (int a = 0; a < num_threads; a++)
             pthread_create(&pt[a], NULL, testMode,  (void *)a);
