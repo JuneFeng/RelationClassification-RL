@@ -514,10 +514,10 @@ namespace RLPre {
     
     void beginTrain()
     {
-        string tmpPath = outString + "_log.txt";
+        string tmpPath = outString + "log.txt";
         logg = fopen(tmpPath.c_str(), "w");
         
-        tmpPath = outString + "_pr.txt";
+        tmpPath = outString + "pr.txt";
         prlog = fopen(tmpPath.c_str(), "w");
         
         init();
